@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BME — Black Man's Empire. AI, technology and creative digital solutions.">
+  <meta name="keywords" content="BME, Black Man's Empire, AI, technology, AI automation, web development, graphic design, video editing">
+  <title>BME | Black Man's Empire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#07080b;--card:#101218;--text:#f5f7fa;--muted:#a9b0bd;--line:#222630;--accent:#4da3ff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:rgba(7,8,11,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:1.5rem;font-weight:900;letter-spacing:2px}
+    .logo span{color:var(--accent)}
+    .links{display:flex;gap:24px;font-size:.92rem;color:var(--muted)}
+    .links a:hover{color:#fff}
+    .hero{min-height:calc(100vh - 72px);display:grid;place-items:center;text-align:center;padding:80px 0}
+    .badge{display:inline-block;border:1px solid var(--line);background:#0d0f14;border-radius:999px;padding:7px 14px;color:var(--muted);font-size:.8rem;margin-bottom:22px}
+    h1{font-size:clamp(3.2rem,10vw,7rem);line-height:.95;letter-spacing:-.06em}
+    h1 span{color:var(--accent)}
+    .hero h2{font-size:clamp(1.1rem,3vw,1.7rem);margin:18px 0 12px}
+    .hero p{max-width:650px;margin:0 auto 30px;color:var(--muted);font-size:1.05rem}
+    .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-block;padding:13px 20px;border-radius:10px;border:1px solid var(--line);font-weight:700}
+    .btn.primary{background:#fff;color:#08090c;border-color:#fff}
+    .btn:hover{transform:translateY(-2px)}
+    section{padding:90px 0}
+    .section-title{font-size:2rem;margin-bottom:10px}
+    .section-sub{color:var(--muted);margin-bottom:32px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+    .panel p{color:var(--muted)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .service h3{margin:12px 0 7px}
+    .service p{color:var(--muted);font-size:.92rem}
+    .icon{font-size:1.8rem}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .contact a{display:block;margin-top:10px;color:var(--accent);word-break:break-word}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem}
+    @media(max-width:800px){
+      .links{display:none}
+      .about,.contact{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:520px){.services{grid-template-columns:1fr}.hero{padding:60px 0}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#home">BME<span>.</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="badge">BLACK MAN'S EMPIRE</div>
+      <h1>BME<span>.</span></h1>
+      <h2>AI • TECH • CREATIVE</h2>
+      <p>Turning ideas into digital reality through artificial intelligence, technology, design and creative solutions.</p>
+      <div class="buttons">
+        <a class="btn primary" href="#services">Explore Services</a>
+        <a class="btn" href="#contact">Work With BME</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About BME</h2>
+      <p class="section-sub">Technology meets creativity.</p>
+      <div class="about">
+        <div class="panel">
+          <h3>Black Man's Empire</h3>
+          <p>BME is a digital brand focused on building useful, creative and modern solutions with AI and technology. We turn ideas into digital products, content and experiences.</p>
+        </div>
+        <div class="panel">
+          <h3>Our Vision</h3>
+          <p>Build boldly. Create intelligently. Keep moving forward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-sub">Digital services built around your idea.</p>
+      <div class="services">
+        <div class="panel service"><div class="icon">🤖</div><h3>AI Content Creation</h3><p>AI-assisted images, concepts and digital content.</p></div>
+        <div class="panel service"><div class="icon">⚙️</div><h3>AI Automation</h3><p>Smart workflows that reduce repetitive digital work.</p></div>
+        <div class="panel service"><div class="icon">💻</div><h3>IT & Development</h3><p>Websites, software ideas and technology solutions.</p></div>
+        <div class="panel service"><div class="icon">🎨</div><h3>Graphic Design</h3><p>Posters, branding, social media graphics and visuals.</p></div>
+        <div class="panel service"><div class="icon">🎬</div><h3>Video Editing</h3><p>Short-form and promotional video editing for digital platforms.</p></div>
+        <div class="panel service"><div class="icon">🖼️</div><h3>AI Image Creation</h3><p>Creative visuals for brands, campaigns and social media.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Build Something</h2>
+      <p class="section-sub">Ready to turn an idea into something real?</p>
+      <div class="contact">
+        <div class="panel">
+          <h3>Instagram</h3>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener">Add your BME Instagram →</a>
+        </div>
+        <div class="panel">
+          <h3>Email</h3>
+          <a href="mailto:yourbusiness@email.com">yourbusiness@email.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© 2026 BME — Black Man's Empire. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
